@@ -15,20 +15,20 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-    
-    
-    
+
+
+
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  
+
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
   </head>
   <body>
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -39,10 +39,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
-    
+
+
     <div class="site-navbar-wrap js-site-navbar bg-white">
-      
+
       <div class="container">
         <div class="site-navbar bg-light">
           <div class="py-1">
@@ -86,17 +86,45 @@
         </div>
       </div>
     </div>
-  
+
     <div style="height: 113px;"></div>
 
 
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
-       
-            <div class="rounded border jobs-wrap">
+            <div class="col-3">
+              <div class="p-4 mb-3 bg-white">
+                <h3 class="h5 text-black mb-3">Filter Results</h3>
+                <p>Type
+                <select class="custom-select" id="typeSelect">
+                  <option value="job-item">-- All --</option>
+                  <option value="teaching">Teaching</option>
+                  <option value="electrical">Electrical</option>
+                  <option value="building">Building</option>
+                  <option value="immersion">Cutural Immersion</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="finance">Finance</option>
+                  <option value="transportation">Transportation &amp; Logistics</option>
+                  <option value="food">Restaurant / Food Service</option>
+                  <option value="technical">Technical</option>
+                </select>
+                </p>
+                <p>Duration
+                <select class="custom-select" id="durationSelect">
+                  <option value="">-- Any --</option>
+                  <option value="Full Time">Full Time</option>
+                  <option value="Part Time">Part Time</option>
+                </select>
+                </p>
+                <p>Location
+                <input class="form-control" id="locationSelect"></p>
+              </div>
+            </div>
 
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center  border-bottom fulltime">
+            <div class="rounded border jobs-wrap col-6">
+                <div>
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center  border-bottom fulltime food">
                   <div class="company-logo blank-logo text-center text-md-left pl-3">
                     <img src="images/company_logo_blank.png" alt="Image" class="img-fluid mx-auto">
                   </div>
@@ -105,7 +133,7 @@
                       <h3>Restaurant Crew</h3>
                       <div class="d-block d-lg-flex">
                         <div class="mr-3"><span class="icon-suitcase mr-1"></span> Resto Bar</div>
-                        <div class="mr-3"><span class="icon-room mr-1"></span> Florida</div>
+                        <div class="mr-3"><span class="icon-room mr-1"></span> <div class="volunteerLocation">Florida</div></div>
                         <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div>
                       </div>
                     </div>
@@ -114,10 +142,12 @@
                     <div class="p-3">
                       <span class="text-info p-2 rounded border border-info">Full Time</span>
                     </div>
-                  </div>  
+                  </div>
                 </a>
-  
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center freelance">
+                </div>
+
+                <div>
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center freelance technical">
                   <div class="company-logo blank-logo text-center text-md-left pl-3">
                     <img src="images/logo_1.png" alt="Image" class="img-fluid mx-auto">
                   </div>
@@ -126,7 +156,7 @@
                       <h3>JavaScript Fullstack Developer</h3>
                       <div class="d-block d-lg-flex">
                         <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div>
-                        <div class="mr-3"><span class="icon-room mr-1"></span> Anywhere</div>
+                        <div class="mr-3"><span class="icon-room mr-1"></span> <div class="volunteerLocation">Anywhere</div></div>
                         <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div>
                       </div>
                     </div>
@@ -135,11 +165,13 @@
                     <div class="p-3">
                       <span class="text-warning p-2 rounded border border-warning">Freelance</span>
                     </div>
-                  </div>  
+                  </div>
                 </a>
-  
-  
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center freelance">
+                </div>
+
+
+                <div>
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center freelance technical">
                   <div class="company-logo blank-logo text-center text-md-left pl-3">
                     <img src="images/logo_1.png" alt="Image" class="img-fluid mx-auto">
                   </div>
@@ -148,7 +180,7 @@
                       <h3>ReactJS Fullstack Developer</h3>
                       <div class="d-block d-lg-flex">
                         <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div>
-                        <div class="mr-3"><span class="icon-room mr-1"></span> Anywhere</div>
+                        <div class="mr-3"><span class="icon-room mr-1"></span> <div class="volunteerLocation">Anywhere</div></div>
                         <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div>
                       </div>
                     </div>
@@ -157,11 +189,12 @@
                     <div class="p-3">
                       <span class="text-warning p-2 rounded border border-warning">Freelance</span>
                     </div>
-                  </div>  
+                  </div>
                 </a>
-  
-  
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime">
+                </div>
+
+                <div>
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime finance">
                   <div class="company-logo blank-logo text-center text-md-left pl-3">
                     <img src="images/company_logo_blank.png" alt="Image" class="img-fluid mx-auto">
                   </div>
@@ -170,7 +203,7 @@
                       <h3>Assistant Brooker, Real Estate</h3>
                       <div class="d-block d-lg-flex">
                         <div class="mr-3"><span class="icon-suitcase mr-1"></span> RealState</div>
-                        <div class="mr-3"><span class="icon-room mr-1"></span> New York</div>
+                        <div class="mr-3"><span class="icon-room mr-1"></span> <div class="volunteerLocation">New</div> York</div>
                         <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div>
                       </div>
                     </div>
@@ -179,10 +212,12 @@
                     <div class="p-3">
                       <span class="text-info p-2 rounded border border-info">Full Time</span>
                     </div>
-                  </div>  
+                  </div>
                 </a>
-  
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime">
+                </div>
+
+                <div>
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime technical">
                   <div class="company-logo blank-logo text-center text-md-left pl-3">
                     <img src="images/logo_2.png" alt="Image" class="img-fluid mx-auto">
                   </div>
@@ -191,23 +226,23 @@
                       <h3>Telecommunication Manager</h3>
                       <div class="d-block d-lg-flex">
                         <div class="mr-3"><span class="icon-suitcase mr-1"></span> Think</div>
-                        <div class="mr-3"><span class="icon-room mr-1"></span> London</div>
+                        <div class="mr-3"><span class="icon-room mr-1"></span> <div class="volunteerLocation">London</div></div>
                       </div>
                     </div>
                   </div>
                   <div class="job-category align-self-center">
                     <div class="p-3">
-                      <span class="text-danger p-2 rounded border border-danger">Par Time</span>
+                      <span class="text-danger p-2 rounded border border-danger">Part Time</span>
                     </div>
-                  </div>  
+                  </div>
                 </a>
-  
-  
+                </div>
+
               </div>
 
-          <div class="col-lg-4">
-            
-            
+          <div class="col-3">
+
+
             <div class="p-4 mb-3 bg-white">
               <h3 class="h5 text-black mb-3">More Info</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur</p>
@@ -218,12 +253,12 @@
       </div>
     </div>
 
-   
-
-    
 
 
-    
+
+
+
+
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -238,11 +273,11 @@
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
 
-  
+
   <script src="js/mediaelement-and-player.min.js"></script>
 
   <script src="js/main.js"></script>
-    
+
 
   <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -331,6 +366,27 @@
           });
         }
       }
+
+      $(document).ready(function(){
+        $("#typeSelect").on("change", function() {
+          var value = $(this).val().toLowerCase();
+          $(".jobs-wrap a").filter(function() {
+            $(this).parent().toggle($(this).hasClass(value));
+          });
+        });
+        $("#durationSelect").on("change", function() {
+          var value = $(this).val().toLowerCase();
+          $(".jobs-wrap a").filter(function() {
+            $(this).parent().toggle($(this).find(".job-category span").text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+        $("#locationSelect").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $(".jobs-wrap a").filter(function() {
+            $(this).parent().toggle($(this).find(".volunteerLocation").text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"
