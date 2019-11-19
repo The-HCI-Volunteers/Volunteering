@@ -83,8 +83,9 @@
                           </ul>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="new-post.html"><span class="bg-primary text-white py-3 px-4 rounded">Login/Sign Up</span></a></li>
-                      </ul>
+                        <li class="signinbtn"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
+                      <li class="profileicon"> <img src="images/profile_pic0.png" class="round w-25 "></li>
+                    </ul>
                   </div>
                 </nav>
               </div>
@@ -400,6 +401,18 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"
         async defer></script>
-
+        <script>
+            $(document).ready(function(){
+              if (window.sessionStorage.getItem("name")) {
+                $(".signinbtn").hide(1);
+                $(".profileicon").show(1);
+              } else {
+                $(".signinbtn").show(1);
+                $(".profileicon").hide(1);
+              }
+              
+            });
+            
+            </script>
   </body>
 </html>
