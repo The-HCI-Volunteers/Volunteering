@@ -107,7 +107,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" aria-labelledby="applicationHeading">
-                    <h4 class="modal-title" id="applicationHeading">Just a Few More Details:</h4>
+                    <h4 class="modal-title" id="applicationHeading">Just a Few More Details</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -139,7 +139,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#successModal">Submit</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#successModal" id="applySubmit">Submit</button>
                 </div>
             </div>
         </div>
@@ -279,7 +279,30 @@
           $(".signinbtn").show(1);
           $(".profileicon").hide(1);
         }
-
+        function validate(field) {
+            $("#applySubmit").on("click", function(event) {
+                if (!$(field).val().length) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $(field).css("border","1px solid red");
+                } else {
+                    $(field).css("border","");
+                }
+            });
+        }
+        validate("#applicationName");
+        validate("#applicationEmail");
+        validate("#applicationAge");
+        validate("#experienceLevelSelect");
+        $("#applySubmit").on("click", function(event) {
+            if (!$("#genderSelect input:radio:checked").val()) {
+                event.preventDefault();
+                event.stopPropagation();
+                $("#genderSelect").css("border","1px solid red");
+            } else {
+                $("#genderSelect").css("border","");
+            }
+        });
       });
 
       </script>

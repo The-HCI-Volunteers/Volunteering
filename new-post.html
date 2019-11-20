@@ -134,7 +134,7 @@
                 <div class="col-md-12"><h3>Sector</h3></div>
                 <div class="col-md-12 mb-3 mb-md-0">
                   <select class="custom-select" id="sectorSelect">
-                    <label for="sectorOption0"><option value="job-item" id="sectorOption0">-- All --</option></label>
+                    <label for="sectorOption0"><option value="" id="sectorOption0">-- All --</option></label>
                     <label for="sectorOption1"><option value="teaching" id="sectorOption1">Teaching</option></label>
                     <label for="sectorOption2"><option value="electrical" id="sectorOption2">Electrical</option></label>
                     <label for="sectorOption3"><option value="building" id="sectorOption3">Building</option></label>
@@ -148,7 +148,7 @@
                 </div>
               </div>
 
-              <div class="row form-group" aria-label="Duration">
+              <div class="row form-group" aria-label="Duration" id="durationSelect">
                 <div class="col-md-12"><h3>Duration</h3></div>
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label for="fulltime"><input type="radio" id="fulltime" name="jobDuration">Full Time</label>
@@ -162,14 +162,14 @@
               <div class="row form-group mb-4" aria-label="Location">
                 <div class="col-md-12"><h3>Location</h3></div>
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <input type="text" class="form-control" placeholder="New York City">
+                  <input type="text" class="form-control" placeholder="eg. New York City" id="locationSelect">
                 </div>
               </div>
 
               <div class="row form-group" aria-label="Description">
                 <div class="col-md-12"><h3>Description</h3></div>
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <textarea name="" class="form-control" id="" cols="30" rows="5"></textarea>
+                  <textarea name="" class="form-control" id="jobDescription" cols="30" rows="5"></textarea>
                 </div>
               </div>
 
@@ -446,9 +446,32 @@
         }
       }
       $(document).ready(function(){
+        function validate(field) {
+            if (!$(field).val().length) {
+                $(field).css("border","1px solid red");
+                return 0;
+            } else {
+                $(field).css("border","");
+                return 1;
+            }
+        }
+        function validateRadio(field) {
+            if (!$(field + " input:radio:checked").val()) {
+                $(field).css("border","1px solid red");
+                return 0;
+            } else {
+                $(field).css("border","");
+                return 1;
+            }
+        }
         $("#postButton").on("click", function() {
-            $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3></div>");
-            window.location.href = "#top";
+            if (validate("#fullname") && validate("#organizationName") && validate("#sectorSelect") && validateRadio("#durationSelect") && validate("#locationSelect") && validate("#jobDescription")) {
+                $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3></div>");
+                window.location.href = "#top";
+            } else {
+                event.preventDefault();
+                event.stopPropagation();
+            }
         });
       });
     </script>
