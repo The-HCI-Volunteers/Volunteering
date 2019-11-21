@@ -56,34 +56,33 @@
                     <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                        <li class="has-children">
-                          <a href="index.html">For Volunteers</a>
-                          <ul class="dropdown arrow-top">
-                              <!-- <li><a href="#">My Profile</a></li> -->
-                              <li><a href="job-list.html">All Programs</a></li>
-                          </ul>
-                        </li>
-
-                        <li class="has-children">
-                          <a href="#">For Recruiters</a>
-                          <ul class="dropdown arrow-top">
-                            <li><a href="#">My Profile</a></li>
-                            <li><a href="org-program-list.html">Previous Programs</a></li>
-                            <li><a href="org-volunteer-list.html">Browse Volunteers</a></li>
-                            <li><a href="new-post.html">Post a Program</a></li>
+                            <li class="has-children">  
+                                <a href="index.html">For Volunteers</a>
+                                <ul class="dropdown arrow-top">
+                                    <!-- <li><a href="#">My Profile</a></li> -->
+                                    <li><a href="job-list.html">All Programs</a></li>
+                                </ul>
+                            </li>
                             <li class="has-children">
-                              <a href="#">More Links</a>
-                              <ul class="dropdown">
-                                <li><a href="#">--Not Available--</a></li>
-                                <!-- <li><a href="#">Post a Program</a></li> -->
-                                <!-- <li><a href="#">My Profile</a></li> -->
+                              <a href="#">For Recruiters</a>
+                              <ul class="dropdown arrow-top">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="org-program-list.html">Previous Programs</a></li>
+                                <li><a href="org-volunteer-list.html">Browse Volunteers</a></li>
+                                <li><a href="new-post.html">Post a Program</a></li>
+                                <li class="has-children">
+                                  <a href="#">More Links</a>
+                                  <ul class="dropdown">
+                                    <li><a href="#">--Not Available--</a></li>
+                                    <!-- <li><a href="#">Post a Program</a></li> -->
+                                    <!-- <li><a href="#">My Profile</a></li> -->
+                                  </ul>
+                                </li>
+      
                               </ul>
                             </li>
-
-                          </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="signinbtn"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="signinbtn"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
                       <li class="profileicon"> <img src="images/profile_pic0.png" class="round w-25 "></li>
                     </ul>
                   </div>
@@ -100,63 +99,50 @@
 
     <div class="site-section bg-light">
       <div class="container">
-          <h3 class="h5 text-black mb-3 text-center">Search Result of "volunteer"</h3>
         <div class="row">
-            <div class="col-4" aria-label="Filter Results">
+            <div class="col-3" aria-label="Filter Results">
               <div class="p-4 mb-3 bg-white">
-                <h3 class="h5 text-black mb-3">Filter Programs</h3>
-                <p><label for="sectorSelect">Sector</label>
-                <select class="custom-select" id="sectorSelect">
+                <h3 class="h5 text-black mb-3">Filter Volunteers</h3>
+                <p>Previous Programs
+                <select class="custom-select" id="typeSelect">
                   <option value="job-item">-- All --</option>
-                  <option value="teaching">Teaching</option>
-                  <option value="electrical">Electrical</option>
-                  <option value="building">Building</option>
-                  <option value="immersion">Cutural Immersion</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="finance">Finance</option>
-                  <option value="transportation">Transportation &amp; Logistics</option>
-                  <option value="food">Restaurant / Food Service</option>
-                  <option value="technical">Technical</option>
+                  <option value="1">English Teaching for Primary School Students</option>
+                  <option value="2">Shark Conservation Volunteering in Fiji</option>
+                  <option value="3">Rainforest Conservation in Peru for Spring Break</option>
+                  <option value="4">Medical Internships in Nepal for Teenagers</option>
+                  <!-- <option value="healthcare">Healthcare</option> -->
+                  <!-- <option value="finance">Finance</option> -->
+                  <!-- <option value="transportation">Transportation &amp; Logistics</option> -->
+                  <!-- <option value="food">Restaurant / Food Service</option> -->
+                  <!-- <option value="technical">Technical</option> -->
                 </select>
                 </p>
-                <p>
-                <div class="form-group" id="durationSelect">
-                  <label for="durationSelect">Duration</label>
-                  <div class="checkbox">
-                    <label for="fulltime"><input type="checkbox" id="fulltime" name="jobDuration" value="Full Time" checked>Full Time</label>
-                  </div>
-                  <div class="checkbox">
-                    <label for="parttime"><input type="checkbox" id="parttime" name="jobDuration" value="Part Time" checked>Part Time</label>
-                  </div>
-                </div>
-                </p>
-                <p><label for="locationSelect">Location</label>
-                <select class="custom-select" id="locationSelect">
+                <p>Duration
+                <select class="custom-select" id="durationSelect">
                   <option value="">-- Any --</option>
-                  <option value="boston">Boston</option>
-                  <option value="chicago">Chicago</option>
-                  <option value="florida">Florida</option>
-                  <option value="london">London</option>
-                  <option value="new york">New York</option>
+                  <option value="Full Time">Full Time</option>
+                  <option value="Part Time">Part Time</option>
                 </select>
                 </p>
+                <p>Location
+                <input class="form-control" id="locationSelect"></p>
               </div>
             </div>
 
-            <div class="rounded border jobs-wrap col-8">
+            <div class="rounded border jobs-wrap col-6">
                 <div>
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center  border-bottom fulltime food">
-                  <div class="company-logo blank-logo text-center text-md-left pl-3">
-                    <img src="images/company_logo_blank.png" alt="company logo" class="img-fluid mx-auto">
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center  border-bottom fulltime 1">
+                  <div class="company-logo blank-logo text-center text-md-left pl-4" >
+                    <img src="images/profile_pic1.jpeg" alt="company logo" class="rounded-circle" height="50">
                   </div>
                   <div class="job-details h-100">
                     <div class="p-3 align-self-center">
-                      <h3>Restaurant Crew</h3>
-                      <div>Help chef and learn something new.</div>
-
+                      <h3>Autumn Mcgee</h3>
+                      <div>Programs: English Teaching for Primary School Students.</div>
+                    
                       <div class="d-block d-lg-flex">
-                        <div class="mr-3"><span class="icon-suitcase mr-1"></span> Resto Bar</div>
-                        <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Florida</div>
+                        <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Resto Bar</div> -->
+                        <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Chicago</div>
                     </div>
                     </div>
                   </div>
@@ -169,16 +155,16 @@
                 </div>
 
                 <div>
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime teaching">
-                  <div class="company-logo blank-logo text-center text-md-left pl-3">
-                    <img src="images/logo_1.png" alt="company logo" class="img-fluid mx-auto">
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime 4">
+                  <div class="company-logo blank-logo text-center text-md-left pl-4">
+                    <img src="images/profile_pic2.jpeg" alt="company logo" class="rounded-circle" height="50">
                   </div>
                   <div class="job-details h-100">
                     <div class="p-3 align-self-center">
-                      <h3>English Teaching for Primary School Students</h3>
-                      <div>Work at schools and help young students imrove their English language skills.</div>
+                      <h3>Carley Randall</h3>
+                      <div>Programs: Medical Internships in Nepal for Teenagers.</div>
                       <div class="d-block d-lg-flex">
-                        <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div>
+                        <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div> -->
                         <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Chicago</div>
                       </div>
                     </div>
@@ -193,16 +179,16 @@
 
 
                 <div>
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime healthcare">
-                  <div class="company-logo blank-logo text-center text-md-left pl-3">
-                    <img src="images/logo_1.png" alt="company logo" class="img-fluid mx-auto">
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime 1">
+                  <div class="company-logo blank-logo text-center text-md-left pl-4">
+                    <img src="images/profile_pic3.jpeg" alt="company logo" class="rounded-circle" height="50">
                   </div>
                   <div class="job-details h-100">
                     <div class="p-3 align-self-center">
-                      <h3>Front Desk Volunteer in Hospital</h3>
-                      <div>Answer patients questions and give them suggestions.</div>
+                      <h3>Clay Marks</h3>
+                      <div>Programs: English Teaching for Primary School Students.</div>
                       <div class="d-block d-lg-flex">
-                        <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div>
+                        <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div> -->
                         <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Boston</div>
                       </div>
                     </div>
@@ -216,16 +202,16 @@
                 </div>
 
                 <div>
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime finance">
-                  <div class="company-logo blank-logo text-center text-md-left pl-3">
-                    <img src="images/company_logo_blank.png" alt="company logo" class="img-fluid mx-auto">
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime 3">
+                  <div class="company-logo blank-logo text-center text-md-left pl-4">
+                    <img src="images/profile_pic4.jpeg" alt="company logo"class="rounded-circle" height="50">
                   </div>
                   <div class="job-details h-100">
                     <div class="p-3 align-self-center">
-                      <h3>Assistant Brooker, Real Estate</h3>
-                      <div>Assist fulltime brooker to do finance stuffs.</div>
+                      <h3>Chanel Sanderson</h3>
+                      <div>Programs: Rainforest Conservation in Peru for Spring Break.</div>
                       <div class="d-block d-lg-flex">
-                        <div class="mr-3"><span class="icon-suitcase mr-1"></span> RealState</div>
+                        <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> RealState</div> -->
                         <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span> New York</div>
                       </div>
                     </div>
@@ -239,16 +225,16 @@
                 </div>
 
                 <div>
-                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime technical">
-                  <div class="company-logo blank-logo text-center text-md-left pl-3">
-                    <img src="images/logo_2.png" alt="company logo" class="img-fluid mx-auto">
+                <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime 3">
+                  <div class="company-logo blank-logo text-center text-md-left pl-4">
+                    <img src="images/profile_pic0.png" alt="company logo" class="rounded-circle" height="50">
                   </div>
                   <div class="job-details h-100">
                     <div class="p-3 align-self-center">
-                      <h3>Assistant JavaScript Developer for Non-profit web</h3>
-                      <div>Assist fulltime developer to do build a website for non profit organization.</div>
+                      <h3>Kwabena Broadhurst</h3>
+                      <div>Programs: Rainforest Conservation in Peru for Spring Break.</div>
                       <div class="d-block d-lg-flex">
-                        <div class="mr-3"><span class="icon-suitcase mr-1"></span> Think</div>
+                        <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Think</div> -->
                         <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>London</div>
                       </div>
                     </div>
@@ -263,16 +249,18 @@
 
               </div>
 
+          <div class="col-3">
+
+
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">More Info</h3>
+              <p>Volunteering is generally considered an altruistic activity where an individual or group provides services for no financial or social gain "to benefit another person, group or organization".</p>
+              <p><a href="#" class="btn btn-primary  py-2 px-4">Help</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -382,30 +370,19 @@
       }
 
       $(document).ready(function(){
-        $("#sectorSelect").on("change", function() {
+        $("#typeSelect").on("change", function() {
           var value = $(this).val().toLowerCase();
           $(".jobs-wrap a").filter(function() {
             $(this).parent().toggle($(this).hasClass(value));
           });
         });
-        $("#fulltime").on("change", function() {
+        $("#durationSelect").on("change", function() {
           var value = $(this).val().toLowerCase();
           $(".jobs-wrap a").filter(function() {
-            if ($(this).find(".job-category span").text().toLowerCase().indexOf(value) > -1) {
-                var temp = $(this).find($("#fulltime").checked);
-                $(this).parent().toggle($("#fulltime").checked);
-            }
+            $(this).parent().toggle($(this).find(".job-category span").text().toLowerCase().indexOf(value) > -1);
           });
         });
-        $("#parttime").on("change", function() {
-          var value = $(this).val().toLowerCase();
-          $(".jobs-wrap a").filter(function() {
-            if ($(this).find(".job-category span").text().toLowerCase().indexOf(value) > -1) {
-                $(this).parent().toggle($("#parttime").checked);
-            }
-          });
-        });
-        $("#locationSelect").on("change", function() {
+        $("#locationSelect").on("keyup", function() {
           var value = $(this).val().toLowerCase();
           $(".jobs-wrap a").filter(function() {
             $(this).parent().toggle($(this).find(".volunteerLocation").text().toLowerCase().indexOf(value) > -1);
@@ -425,9 +402,9 @@
                 $(".signinbtn").show(1);
                 $(".profileicon").hide(1);
               }
-
+              
             });
-
+            
             </script>
   </body>
 </html>

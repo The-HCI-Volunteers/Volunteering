@@ -955,3 +955,32 @@ a {
     background: #28a745;
     color: #fff;
     border: 1px solid transparent; }
+
+  .comment {
+    font-size: 27px;
+    color: #ffa735;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .comment_feedback {
+    font-size: 40px;
+    color: #ffa735;
+    margin-top: 0;
+  }
+
+  .comment_feedback li {
+    float: left;
+    cursor: pointer;
+  }
+
+  #stars {
+    padding: 0;
+    margin: 0;
+    float: left;
+    cursor: pointer;
+  }
+
+  #stars > ul {
+    list-style: none;
+  } 
