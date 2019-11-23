@@ -411,6 +411,13 @@
             $(this).parent().toggle($(this).find(".volunteerLocation").text().toLowerCase().indexOf(value) > -1);
           });
         });
+        var params = new URLSearchParams(window.location.search);
+        if (params.has("sector")) {
+            sector = params.get("sector");
+        } else {
+            sector = "job-item";
+        }
+        $("#sectorSelect").val(sector).change();
       });
     </script>
 
