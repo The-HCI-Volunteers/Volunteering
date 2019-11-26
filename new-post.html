@@ -68,18 +68,10 @@
                         <li class="has-children">
                           <a href="#">For Recruiters</a>
                           <ul class="dropdown arrow-top">
-                            <li><a href="#">My Profile</a></li>
+                            <li><a href="org_profile.html">My Profile</a></li>
                             <li><a href="org-program-list.html">Previous Programs</a></li>
                             <li><a href="org-volunteer-list.html">Browse Volunteers</a></li>
                             <li><a href="new-post.html">Post a Program</a></li>
-                            <li class="has-children">
-                              <a href="#">More Links</a>
-                              <ul class="dropdown">
-                                <li><a href="#">--Not Available--</a></li>
-                                <!-- <li><a href="#">Post a Program</a></li> -->
-                                <!-- <li><a href="#">My Profile</a></li> -->
-                              </ul>
-                            </li>
 
                           </ul>
                         </li>
@@ -124,15 +116,8 @@
                 </div>
               </div>
 
-              <!-- <div class="row form-group mb-5" aria-label="Organization Name">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="organizationName">Organization Name</label>
-                  <input type="text" id="organizationName" class="form-control" placeholder="eg. The Salvation Army">
-                </div>
-              </div> -->
-
               <div class="row form-group" aria-label="Sector">
-                <div class="col-md-12"><h3>Category*</h3></div>
+                <div class="col-md-12"><h3>Sector*</h3></div>
                 <div class="col-md-12 mb-3 mb-md-0">
                   <select class="custom-select" id="sectorSelect">
                     <label for="sectorOption0"><option value="" id="sectorOption0">-- Select --</option></label>
@@ -335,8 +320,8 @@
             }
         }
         $("#postButton").on("click", function() {
-            if (validate("#fullname") && validate("#organizationName") && validate("#sectorSelect") && validateRadio("#durationSelect") && validate("#locationSelect") && validate("#jobDescription")) {
-                $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3></div>");
+            if (validate("#fullname") && validate("#sectorSelect") && validateRadio("#durationSelect") && validate("#locationSelect") ) {
+                $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3><a href=\"new-post.html\">Back</a> </div>");
                 window.location.href = "#top";
             } else {
                 event.preventDefault();

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>VolunteerFinder</title>
+    <title>Volunteer Finder</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="css/animate.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-
-
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
@@ -48,12 +46,15 @@
                 <div class="py-1">
                     <div class="row align-items-center">
                         <div class="col-2">
-                            <h2 class="mb-0 site-logo"><a href="index.html">Volunteer<strong class="font-weight-bold">Finder</strong> </a></h2>
+                            <h2 class="mb-0 site-logo"><a href="index.html">Volunteer<strong
+                                    class="font-weight-bold">Finder</strong> </a></h2>
                         </div>
                         <div class="col-10">
                             <nav class="site-navigation text-right" role="navigation">
                                 <div class="container">
-                                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
+                                                                                                  class="site-menu-toggle js-menu-toggle text-black"><span
+                                            class="icon-menu h3"></span></a></div>
 
                                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                                         <li class="has-children">
@@ -61,8 +62,6 @@
                                             <ul class="dropdown arrow-top">
                                                 <!-- <li><a href="#">My Profile</a></li> -->
                                                 <li><a href="job-list.html">All Programs</a></li>
-                                                <li><a href="FAQ.html">FAQs</a></li>
-
                                             </ul>
                                         </li>
                                         <li class="has-children">
@@ -72,15 +71,18 @@
                                                 <li><a href="previous-program-list.html">Previous Programs</a></li>
                                                 <li><a href="org-volunteer-list.html">Browse Volunteers</a></li>
                                                 <li><a href="new-post.html">Post a Program</a></li>
+
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
-                                        <li class="signinbtn"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
+                                        <li class="signinbtn"><a href="sign-up.html"><span
+                                                class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a>
+                                        </li>
                                         <li class="profileicon">
                                             <a href="user_profile.html">
                                                 <img src="images/profile.jpg" height="50" width="50" class="round"></li>
-                                            </a>
-
+                                        </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
@@ -95,8 +97,9 @@
 
     <div class="unit-5 overlay" style="background-image: url('images/hero_1.jpg');">
         <div class="container text-center">
-            <h2 class="mb-0">Edit Profile</h2>
-            <p class="mb-0 unit-6"><a href="user_profile.html">Profile</a> <span class="sep">></span> <span>Edit Profile</span></p>
+            <h2 class="mb-0">Recruiter Profile</h2>
+            <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>My Profile</span>
+            </p>
         </div>
     </div>
 
@@ -107,90 +110,67 @@
 
                 <div class="col-md-12 col-lg-8 mb-5">
 
-<!--                    表单开头   -->
 
-                    <form class="p-5 bg-white" action="user_profile.html" method="post">
-
-                        <div class="row form-group">
-                            <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="username">
-                                    User Name
-                                </label>
-                                <input type="text" id="username" class="form-control" placeholder="Jeremy">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <div class="col-md-12">
-                                <label class="font-weight-bold" for="email">
-                                    Email
-                                </label>
-                                <input type="email" id="email" class="form-control" placeholder="jeremy@gmail.com">
-                            </div>
-                        </div>
-
+                    <form action="#" class="p-5 bg-white">
 
                         <div class="row form-group">
                             <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="phone">
-                                    Phone
-                                </label>
-                                <input type="text" id="phone" class="form-control" placeholder="+1 123 456 7890">
+
+                                <h3 class="h5 text-black mb-3">Your Profile</h3>
+
+                                <p class="mb-0 text-black font-weight-bold">Organization Name</p>
+                                <p class="mb-4" id="username">AfterSchool</p>
+
+                                <p class="mb-0 text-black font-weight-bold">Email</p>
+                                <p class="mb-4" id="email">voluteer@afterschool.org</p>
+
+                                <p class="mb-0 text-black font-weight-bold">Phone</p>
+                                <p class="mb-4" id="phone">+1 123 456 7890</p>
+
+                                <p class="mb-0 text-black font-weight-bold">Address</p>
+                                <p class="mb-0" id="address">1900 Wilmette Ave</p>
+                                <p class="mb-4" id="address">Wilmette, Illinois, USA 60091</p>
+
+                                <p class="mb-0 text-black font-weight-bold">Website</p>
+                                <p class="mb-4" id="preference"><a href="https://www.google.com/search?q=afterschool">afterschool.org</a></p>
+
+                                <p class="mb-0 text-black font-weight-bold">Hours</p>
+                                <p class="mb-4" id="preference">M - F: 9am - 5pm</p>
+
+                                <p class="mb-0 text-black font-weight-bold">Description</p>
+                                <p class="mb-4" id="intro">Our mission is to provide students with fun and affordable after school education programs.</p>
+
                             </div>
                         </div>
 
                         <div class="row form-group">
-                            <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="address">
-                                    Address
-                                </label>
-                                <input type="text" id="address" class="form-control" placeholder="Mountain View, San Francisco, California, USA">
 
-                            </div>
-                        </div>
-
-                        <div class="row form-group">
                             <div class="col-md-12">
-                                <label class="font-weight-bold" for="intro">
-                                    Self Introduction
-                                </label>
-                                <textarea name="message" id="intro" cols="30" rows="5" class="form-control" placeholder="I look forward to make contributions to environmental protection！"></textarea>
+                                <a href="edit_profile.html">
+                                    <p><a href="edit_profile.html" class="btn btn-primary px-4 py-2 text-white pill">Edit
+                                        Profile</a></p>
+                                </a>
                             </div>
                         </div>
 
-                        <div class="row form-group">
-                            <div class="col-md-12">
-<!--                                <button type="submit" id="submit_edit" value="Submit" class="btn btn-primary px-4 py-2 text-white pill">Submit</button>-->
-                                <input type="submit" id="submit_edit" value="Submit" class="btn btn-primary pill px-4 py-2">
-                            </div>
-                        </div>
-
-
+                        <!--  -->
                     </form>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="p-4 mb-3 bg-white">
-<!--                        <h3 class="h5 text-black mb-3">Contact Info</h3>-->
-<!--                        <p class="mb-0 font-weight-bold">Address</p>-->
-<!--                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>-->
 
-<!--                        <p class="mb-0 font-weight-bold">Phone</p>-->
-<!--                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>-->
 
-<!--                        <p class="mb-0 font-weight-bold">Email Address</p>-->
-<!--                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>-->
-
-                        <img src="images/profile.jpg" height="220" width="220" class="img-circle mb-4" style="align-self: center" alt="Profile photo"/>
-
-                        <h3 class="h5 text-black mb-3">Jeremy</h3>
-
-                        <h3 class="h6 text-black mb-3">I look forward to make contributions to environmental protection!</h3>
-
+                        <!--              <img src="" class="img-rounded">-->
+                        <img src="images/organization_logo2.png" width="240" class="img-circle mb-4"
+                             style="align-self: center" alt="Profile photo"/>
 
 
                     </div>
 
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -201,7 +181,7 @@
                 <div class="col-md-4">
                     <div>
                         <h2><span class="icon-room"></span> Location</h2>
-                        <p class="mb-0">New York - 2398 <br>  10 Hadson Carl Street</p>
+                        <p class="mb-0">New York - 2398 <br> 10 Hadson Carl Street</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -221,72 +201,6 @@
         </div>
     </div>
 
-
-
-
-
-
-    <footer class="site-footer">
-        <div class="container">
-
-
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="footer-heading mb-4 text-white">About</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
-                    <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Approach</a></li>
-                                <li><a href="#">Sustainability</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Careers</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h3 class="footer-heading mb-4 text-white">Categories</h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Full Time</a></li>
-                                <li><a href="#">Freelance</a></li>
-                                <li><a href="#">Temporary</a></li>
-                                <li><a href="#">Internship</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-2">
-                    <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
-                    <div class="col-md-12">
-                        <p>
-                            <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
-                            <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-                            <a href="#" class="p-2"><span class="icon-instagram"></span></a>
-                            <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                    <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-warning" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -308,7 +222,7 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
 
         for (var i = 0; i < total; i++) {
@@ -381,7 +295,7 @@
     // as supplied by the browser's 'navigator.geolocation' object.
     function geolocate() {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
+            navigator.geolocation.getCurrentPosition(function (position) {
                 var geolocation = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude
@@ -399,25 +313,17 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"
         async defer></script>
 <script>
-    $(document).ready(function(){
-    if (window.sessionStorage.getItem("name") == "volunteer") {
-      $(".signinbtn").hide(1);
-      $(".orgicon").hide(1);
-      $(".profileicon").show(1);
-    } else if (window.sessionStorage.getItem("name") == "org") {
-      $(".signinbtn").hide(1);
-      $(".orgicon").show(1);
-      $(".profileicon").hide(1);
-    } else {
-      $(".signinbtn").show(1);
-      $(".orgicon").hide(1);
-      $(".profileicon").hide(1);
-    }
-    
-  });
+    $(document).ready(function () {
+        if (window.sessionStorage.getItem("name")) {
+            $(".signinbtn").hide(1);
+            $(".profileicon").show(1);
+        } else {
+            $(".signinbtn").show(1);
+            $(".profileicon").hide(1);
+        }
+
+    });
 
 </script>
-
-<script src="js/js_edit_profile.js"></script>
 </body>
 </html>
