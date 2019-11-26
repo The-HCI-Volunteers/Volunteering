@@ -406,16 +406,22 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"
         async defer></script>
 <script>
-    $(document).ready(function () {
-        if (window.sessionStorage.getItem("name")) {
-            $(".signinbtn").hide(1);
-            $(".profileicon").show(1);
-        } else {
-            $(".signinbtn").show(1);
-            $(".profileicon").hide(1);
-        }
-
-    });
+    $(document).ready(function(){
+    if (window.sessionStorage.getItem("name") == "volunteer") {
+      $(".signinbtn").hide(1);
+      $(".orgicon").hide(1);
+      $(".profileicon").show(1);
+    } else if (window.sessionStorage.getItem("name") == "org") {
+      $(".signinbtn").hide(1);
+      $(".orgicon").show(1);
+      $(".profileicon").hide(1);
+    } else {
+      $(".signinbtn").show(1);
+      $(".orgicon").hide(1);
+      $(".profileicon").hide(1);
+    }
+    
+  });
 
 </script>
 </body>

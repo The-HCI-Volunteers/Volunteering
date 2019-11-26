@@ -85,6 +85,7 @@
                       <li><a href="contact.html">Contact</a></li>
                       <li class="signinbtn"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
                       <li class="profileicon"> <a href="user_profile.html"> <img src="images/profile_pic0.png" class="round w-25 "> </a> </li>
+                      <li class="orgicon"> <a href="job-list.html"> <img src="images/profile_pic1.png" class="round w-25 "> </a> </li>
                     </ul>
                   </div>
                 </nav>
@@ -616,11 +617,17 @@
 
   <script>
   $(document).ready(function(){
-    if (window.sessionStorage.getItem("name")) {
+    if (window.sessionStorage.getItem("name") == "volunteer") {
       $(".signinbtn").hide(1);
+      $(".orgicon").hide(1);
       $(".profileicon").show(1);
+    } else if (window.sessionStorage.getItem("name") == "org") {
+      $(".signinbtn").hide(1);
+      $(".orgicon").show(1);
+      $(".profileicon").hide(1);
     } else {
       $(".signinbtn").show(1);
+      $(".orgicon").hide(1);
       $(".profileicon").hide(1);
     }
     
