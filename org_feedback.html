@@ -117,7 +117,7 @@
 
                     <div class="col-md-12 col-lg-8 mb-5">
 
-                        <form action="org-volunteer-list.html" class="p-5 bg-white">
+                        <form class="p-5 bg-white">
 
                             <h3 class="h5 text-black mb-3">Volunteer info</h3>
                             <p class="mb-0 font-weight-bold">Volunteer Name:</p>
@@ -155,11 +155,27 @@
 
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <input href="org-volunteer-list.html" type="submit" value="Submit" class="btn btn-primary py-2 px-5" οnclick="MsgBox()">
-                                    <a href="third-view-user-profile.html" class="btn btn-secondary py-2 px-4">Cancel</a>
+                                    <!-- <input  data-dismiss="modal" data-toggle="modal" data-target="#successModal" type="submit" value="Submit" class="btn btn-primary py-2 px-5" οnclick="MsgBox()"> -->
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#successModal">Submit</button>
+                                    <a href="third-view-user-profile.html" class="btn btn-secondary py-1.5 px-3">Cancel</a>
                                 </div>
                             </div>
-
+                            <div id="successModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Feedback Completed!</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Thanks for leaving your feedbacks!</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </form>
                     </div>

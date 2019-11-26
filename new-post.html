@@ -320,8 +320,8 @@
             }
         }
         $("#postButton").on("click", function() {
-            if (validate("#fullname") && validate("#sectorSelect") && validateRadio("#durationSelect") && validate("#locationSelect") && validate("#jobDescription")) {
-                $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3></div>");
+            if (validate("#fullname") && validate("#sectorSelect") && validateRadio("#durationSelect") && validate("#locationSelect") ) {
+                $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3><a href=\"new-post.html\">Back</a> </div>");
                 window.location.href = "#top";
             } else {
                 event.preventDefault();
