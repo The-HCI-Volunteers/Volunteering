@@ -61,8 +61,6 @@
                                             <ul class="dropdown arrow-top">
                                                 <!-- <li><a href="#">My Profile</a></li> -->
                                                 <li><a href="job-list.html">All Programs</a></li>
-                                                <li><a href="FAQ.html">FAQs</a></li>
-
                                             </ul>
                                         </li>
                                         <li class="has-children">
@@ -107,92 +105,56 @@
 
                 <div class="col-md-12 col-lg-8 mb-5">
 
-<!--                    表单开头   -->
-
                     <form class="p-5 bg-white" action="user_profile.html" method="post">
 
                         <div class="row form-group">
-                            <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="username">
-                                    User Name
-                                </label>
-                                <input type="text" id="username" class="form-control" placeholder="Jeremy">
-                            </div>
+                            <label class="font-weight-bold" for="username">Organization Name</label>
+                            <input type="text" id="username" class="form-control" value="AfterSchool">
                         </div>
                         <div class="row form-group">
-                            <div class="col-md-12">
-                                <label class="font-weight-bold" for="email">
-                                    Email
-                                </label>
-                                <input type="email" id="email" class="form-control" placeholder="jeremy@gmail.com">
-                            </div>
+                            <label class="font-weight-bold" for="email">Email</label>
+                            <input type="email" id="email" class="form-control" value="voluteer@afterschool.org">
                         </div>
-
-
                         <div class="row form-group">
-                            <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="phone">
-                                    Phone
-                                </label>
-                                <input type="text" id="phone" class="form-control" placeholder="+1 123 456 7890">
-                            </div>
+                            <label class="font-weight-bold" for="phone">Phone</label>
+                            <input type="text" id="phone" class="form-control" value="+1 123 456 7890">
                         </div>
-
                         <div class="row form-group">
-                            <div class="col-md-12 mb-3 mb-md-0">
-                                <label class="font-weight-bold" for="address">
-                                    Address
-                                </label>
-                                <input type="text" id="address" class="form-control" placeholder="Mountain View, San Francisco, California, USA">
-
-                            </div>
+                            <label class="font-weight-bold" for="address1">Address</label>
+                            <input type="text" id="address1" class="form-control" value="1900 Wilmette Ave">
+                            <input type="text" id="address2" class="form-control" value="Wilmette, Illinois, USA 60091">
                         </div>
-
                         <div class="row form-group">
-                            <div class="col-md-12">
-                                <label class="font-weight-bold" for="intro">
-                                    Self Introduction
-                                </label>
-                                <textarea name="message" id="intro" cols="30" rows="5" class="form-control" placeholder="I look forward to make contributions to environmental protection！"></textarea>
-                            </div>
+                            <label class="font-weight-bold" for="website">Website</label>
+                            <input type="text" id="website" class="form-control" value="afterschool.org">
                         </div>
-
                         <div class="row form-group">
-                            <div class="col-md-12">
-<!--                                <button type="submit" id="submit_edit" value="Submit" class="btn btn-primary px-4 py-2 text-white pill">Submit</button>-->
-                                <input type="submit" id="submit_edit" value="Submit" class="btn btn-primary pill px-4 py-2">
-                            </div>
+                            <label class="font-weight-bold" for="hours">Hours</label>
+                            <input type="text" id="hours" class="form-control" value="M - F: 9am - 5pm">
                         </div>
-
+                        <div class="row form-group">
+                            <label class="font-weight-bold" for="description">Description</label>
+                            <textarea name="orgDescription" id="description" cols="30" rows="5" class="form-control">Our mission is to provide students with fun and affordable after school education programs.</textarea>
+                        </div>
+                        <div class="row form-group">
+                            <input type="submit" id="submit_edit" value="Submit" class="btn btn-primary pill px-4 py-2">
+                        </div>
 
                     </form>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="p-4 mb-3 bg-white">
-<!--                        <h3 class="h5 text-black mb-3">Contact Info</h3>-->
-<!--                        <p class="mb-0 font-weight-bold">Address</p>-->
-<!--                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>-->
 
-<!--                        <p class="mb-0 font-weight-bold">Phone</p>-->
-<!--                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>-->
-
-<!--                        <p class="mb-0 font-weight-bold">Email Address</p>-->
-<!--                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>-->
-
-                        <img src="images/profile.jpg" height="220" width="220" class="img-circle mb-4" style="align-self: center" alt="Profile photo"/>
-
-                        <h3 class="h5 text-black mb-3">Jeremy</h3>
-
-                        <h3 class="h6 text-black mb-3">I look forward to make contributions to environmental protection!</h3>
-
-
+                        <img src="images/organization_logo2.png" width="240" class="img-circle mb-4"
+                             style="align-self: center" alt="Profile photo"/>
 
                     </div>
 
                     <div class="p-4 mb-3 bg-white">
                         <h3 class="h5 text-black mb-3">More Info</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
+                        <p><a href="#" class="btn btn-primary px-4 py-2 text-white pill">Learn More</a></p>
                     </div>
                 </div>
             </div>
