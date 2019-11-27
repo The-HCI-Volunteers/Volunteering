@@ -19,8 +19,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
-
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
@@ -47,16 +45,18 @@
         <div class="site-navbar-wrap js-site-navbar bg-white">
 
             <div class="container">
-                <div class="site-navbar bg-light" aria-label="Menu">
+                <div class="site-navbar bg-light">
                     <div class="py-1">
                         <div class="row align-items-center">
                             <div class="col-2">
-                                <h2 class="mb-0 site-logo"><a href="index.html">Volunteer<strong class="font-weight-bold">Finder</strong> </a></h2>
+                                <h2 class="mb-0 site-logo"><a href="index.html">Volunteer<strong
+                                    class="font-weight-bold">Finder</strong> </a></h2>
                             </div>
                             <div class="col-10">
                                 <nav class="site-navigation text-right" role="navigation">
                                     <div class="container">
-                                        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                                        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span
+                                            class="icon-menu h3"></span></a></div>
 
                                         <ul class="site-menu js-clone-nav d-none d-lg-block">
                                             <li class="has-children">
@@ -64,27 +64,29 @@
                                                 <ul class="dropdown arrow-top">
                                                     <!-- <li><a href="#">My Profile</a></li> -->
                                                     <li><a href="job-list.html">All Programs</a></li>
-                                                    <li><a href="FAQ.html">FAQs</a></li>
-
                                                 </ul>
                                             </li>
                                             <li class="has-children">
                                                 <a href="#">For Recruiters</a>
                                                 <ul class="dropdown arrow-top">
                                                     <li><a href="org_profile.html">My Profile</a></li>
-                                                    <li><a href="org-program-list.html">Previous Programs</a></li>
+                                                    <li><a href="previous-program-list.html">Previous Programs</a></li>
                                                     <li><a href="org-volunteer-list.html">Browse Volunteers</a></li>
                                                     <li><a href="new-post.html">Post a Program</a></li>
 
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li class="signinbtn" style="display:none"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
+                                            <li class="signinbtn" style="display:none"><a href="sign-up.html"><span
+                                                class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a>
+                                            </li>
                                             <li class="profileicon" style="display:none">
                                                 <a href="user_profile.html"> <img src="images/profile.jpg" class="round " width="45"> </a>
                                             </li>
                                             <li class="orgicon" style="display:none">
                                                 <a href="job-list.html"> <img src="images/organization_logo2.png" class="round" width="45"> </a>
+                                            </li>
+                                            </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -98,53 +100,34 @@
 
         <div style="height: 113px;"></div>
 
+        <div class="unit-5 overlay" style="background-image: url('images/hero_1.jpg');">
+            <div class="container text-center">
+                <h2 class="mb-0">AfterSchool</h2>
+                <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>Recruiter Profile</span>
+                </p>
+            </div>
+        </div>
 
         <div class="site-section bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-3" aria-label="Filter Results">
-                        <div class="p-4 mb-3 bg-white">
-                            <h3 class="h5 text-black mb-3">Filter Volunteers</h3>
-                            <p>Previous Programs
-                                <select class="custom-select" id="typeSelect">
-                  <option value="job-item">-- All --</option>
-                  <option value="1">English Teaching for Primary School Students</option>
-                  <option value="2">Shark Conservation Volunteering in Fiji</option>
-                  <option value="3">Rainforest Conservation in Peru for Spring Break</option>
-                  <option value="4">Medical Internships in Nepal for Teenagers</option>
-                  <!-- <option value="healthcare">Healthcare</option> -->
-                  <!-- <option value="finance">Finance</option> -->
-                  <!-- <option value="transportation">Transportation &amp; Logistics</option> -->
-                  <!-- <option value="food">Restaurant / Food Service</option> -->
-                  <!-- <option value="technical">Technical</option> -->
-                </select>
-                            </p>
-                            <p>Duration
-                                <select class="custom-select" id="durationSelect">
-                  <option value="">-- Any --</option>
-                  <option value="Full Time">Full Time</option>
-                  <option value="Part Time">Part Time</option>
-                </select>
-                            </p>
-                            <p>Location
-                                <input class="form-control" id="locationSelect"></p>
-                        </div>
-                    </div>
 
-                    <div class="rounded border jobs-wrap col-6">
-                        <div>
-                            <a href="third-view-user-profile.html" class="job-item d-block d-md-flex align-items-center  border-bottom fulltime 1">
-                                <div class="company-logo blank-logo text-center text-md-left pl-4">
-                                    <img src="images/profile_pic1.jpeg" alt="company logo" class="rounded-circle" height="50">
+                    <div class="col-md-8 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100" aria-label="Recent Programs">
+                        <h2 class="mb-5 h3">Upcoming Programs</h2>
+                        <div class="rounded border jobs-wrap">
+
+                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center  border-bottom fulltime">
+                                <div class="company-logo blank-logo text-center text-md-left pl-3">
+                                    <img src="images/company_logo_blank.png" alt="company logo" class="img-fluid mx-auto">
                                 </div>
                                 <div class="job-details h-100">
                                     <div class="p-3 align-self-center">
-                                        <h3>Autumn Mcgee</h3>
-                                        <div>Programs: English Teaching for Primary School Students.</div>
-
+                                        <h3>Volunteer Teaching in Thailand</h3>
+                                        <div>Work a at schools in Thailand and help young students and teachers improve their English language skills.</div>
                                         <div class="d-block d-lg-flex">
                                             <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Resto Bar</div> -->
-                                            <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Chicago</div>
+                                            <div class="mr-3"><span class="icon-room mr-1"></span> Thailand</div>
+                                            <!-- <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -154,44 +137,19 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
 
-                        <div>
-                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime 4">
-                                <div class="company-logo blank-logo text-center text-md-left pl-4">
-                                    <img src="images/profile_pic2.jpeg" alt="company logo" class="rounded-circle" height="50">
+                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime">
+                                <div class="company-logo blank-logo text-center text-md-left pl-3">
+                                    <img src="images/company_logo_blank.png" alt="company logo" class="img-fluid mx-auto">
                                 </div>
                                 <div class="job-details h-100">
                                     <div class="p-3 align-self-center">
-                                        <h3>Carley Randall</h3>
-                                        <div>Programs: Medical Internships in Nepal for Teenagers.</div>
+                                        <h3>Shark Conservation Volunteering in Fiji</h3>
+                                        <div>Dive in the stunning waters of the South Pacific and play a vital role in shark conservation efforts.</div>
                                         <div class="d-block d-lg-flex">
                                             <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div> -->
-                                            <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Chicago</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="job-category align-self-center">
-                                    <div class="p-3">
-                                        <span class="text-info p-2 rounded border border-info">Full Time</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div>
-                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime 1">
-                                <div class="company-logo blank-logo text-center text-md-left pl-4">
-                                    <img src="images/profile_pic3.jpeg" alt="company logo" class="rounded-circle" height="50">
-                                </div>
-                                <div class="job-details h-100">
-                                    <div class="p-3 align-self-center">
-                                        <h3>Clay Marks</h3>
-                                        <div>Programs: English Teaching for Primary School Students.</div>
-                                        <div class="d-block d-lg-flex">
-                                            <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div> -->
-                                            <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>Boston</div>
+                                            <div class="mr-3"><span class="icon-room mr-1"></span> Fiji</div>
+                                            <!-- <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -201,20 +159,43 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
 
-                        <div>
-                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime 3">
-                                <div class="company-logo blank-logo text-center text-md-left pl-4">
-                                    <img src="images/profile_pic4.jpeg" alt="company logo" class="rounded-circle" height="50">
+
+                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime">
+                                <div class="company-logo blank-logo text-center text-md-left pl-3">
+                                    <img src="images/company_logo_blank.png" alt="company logo" class="img-fluid mx-auto">
                                 </div>
                                 <div class="job-details h-100">
                                     <div class="p-3 align-self-center">
-                                        <h3>Chanel Sanderson</h3>
-                                        <div>Programs: Rainforest Conservation in Peru for Spring Break.</div>
+                                        <h3>Rainforest Conservation in Peru for Spring Break</h3>
+                                        <div>Help rehabilitate animals in the Amazon rainforest during your spring break.</div>
+                                        <div class="d-block d-lg-flex">
+                                            <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Cooper</div> -->
+                                            <div class="mr-3"><span class="icon-room mr-1"></span> Peru</div>
+                                            <!-- <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job-category align-self-center">
+                                    <div class="p-3">
+                                        <span class="text-danger p-2 rounded border border-danger">Part Time</span>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center fulltime">
+                                <div class="company-logo blank-logo text-center text-md-left pl-3">
+                                    <img src="images/company_logo_blank.png" alt="company logo" class="img-fluid mx-auto">
+                                </div>
+                                <div class="job-details h-100">
+                                    <div class="p-3 align-self-center">
+                                        <h3>Medical Internships in Nepal for Teenagers</h3>
+                                        <div>Join a group your age on a medical placement and learn from qualified doctors in local hospitals.</div>
                                         <div class="d-block d-lg-flex">
                                             <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> RealState</div> -->
-                                            <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span> New York</div>
+                                            <div class="mr-3"><span class="icon-room mr-1"></span> Nepal</div>
+                                            <!-- <div><span class="icon-money mr-1"></span> $55000 &mdash; 70000</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -224,45 +205,139 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
 
-                        <div>
-                            <a href="job-single.html" class="job-item d-block d-md-flex align-items-center partime 3">
-                                <div class="company-logo blank-logo text-center text-md-left pl-4">
-                                    <img src="images/profile.jpg" alt="company logo" class="rounded-circle" height="50">
-                                </div>
-                                <div class="job-details h-100">
-                                    <div class="p-3 align-self-center">
-                                        <h3>Kwabena Broadhurst</h3>
-                                        <div>Programs: Rainforest Conservation in Peru for Spring Break.</div>
-                                        <div class="d-block d-lg-flex">
-                                            <!-- <div class="mr-3"><span class="icon-suitcase mr-1"></span> Think</div> -->
-                                            <div class="mr-3 volunteerLocation"><span class="icon-room mr-1"></span>London</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="job-category align-self-center">
-                                    <div class="p-3">
-                                        <span class="text-danger p-2 rounded border border-danger">Part Time</span>
-                                    </div>
-                                </div>
-                            </a>
                         </div>
-
                     </div>
 
-                    <div class="col-3">
-
-
+                    <div class="col-lg-4">
                         <div class="p-4 mb-3 bg-white">
-                            <h3 class="h5 text-black mb-3">More Info</h3>
-                            <p>Volunteering is generally considered an altruistic activity where an individual or group provides services for no financial or social gain "to benefit another person, group or organization".</p>
-                            <p><a href="#" class="btn btn-primary  py-2 px-4">Help</a></p>
+
+
+                            <!--              <img src="" class="img-rounded">-->
+                            <img src="images/organization_logo2.png" width="240" class="img-circle mb-4" style="align-self: center" alt="Profile photo" />
+                            <p class="comment">★★★★☆</p>
+
+                            <h3 class="h6 text-black mb-3">Our mission is to provide students with fun and affordable after school education programs.</h3>
+
+
                         </div>
+
+                        <div class="p-4 mb-3 bg-white" aria-label="Contact Info">
+                            <h3 class="h5 text-black mb-3">Contact Info</h3>
+                            <p class="mb-0 text-black font-weight-bold">Phone</p>
+                            <p class="mb-0" id="phone">+1 123 456 7890</p>
+                            <p class="mb-4" id="email">voluteer@afterschool.org</p>
+
+                            <p class="mb-0 text-black font-weight-bold">Address</p>
+                            <p class="mb-0" id="address1">1900 Wilmette Ave</p>
+                            <p class="mb-4" id="address2">Wilmette, Illinois, USA 60091</p>
+
+                            <p class="mb-0 text-black font-weight-bold">Website</p>
+                            <p class="mb-4" id="website"><a href="https://www.google.com/search?q=afterschool">afterschool.org</a></p>
+
+                            <p class="mb-0 text-black font-weight-bold">Hours</p>
+                            <p class="mb-4" id="hours">M - F: 9am - 5pm</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5 quick-contact-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div>
+                            <h2><span class="icon-room"></span> Location</h2>
+                            <p class="mb-0">New York - 2398 <br> 10 Hadson Carl Street</p>
+                        </div>j4bbath3hub@r2d1
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <h2><span class="icon-clock-o"></span> Service Times</h2>
+                            <p class="mb-0">Wednesdays at 6:30PM - 7:30PM <br> Fridays at Sunset - 7:30PM <br> Saturdays at 8:00AM - Sunset</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2><span class="icon-comments"></span> Get In Touch</h2>
+                        <p class="mb-0">Email: info@yoursite.com <br> Phone: (123) 3240-345-9348 </p>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <footer class="site-footer">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="footer-heading mb-4 text-white">About</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.
+                        </p>
+                        <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Approach</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="footer-heading mb-4 text-white">Categories</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Full Time</a></li>
+                                    <li><a href="#">Freelance</a></li>
+                                    <li><a href="#">Temporary</a></li>
+                                    <li><a href="#">Internship</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                                <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All Rights Reserved | This template is made with <i class="icon-heart text-warning" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -374,43 +449,16 @@
                 });
             }
         }
-
-        $(document).ready(function() {
-            $("#typeSelect").on("change", function() {
-                var value = $(this).val().toLowerCase();
-                $(".jobs-wrap a").filter(function() {
-                    $(this).parent().toggle($(this).hasClass(value));
-                });
-            });
-            $("#durationSelect").on("change", function() {
-                var value = $(this).val().toLowerCase();
-                $(".jobs-wrap a").filter(function() {
-                    $(this).parent().toggle($(this).find(".job-category span").text().toLowerCase().indexOf(value) > -1);
-                });
-            });
-            $("#locationSelect").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $(".jobs-wrap a").filter(function() {
-                    $(this).parent().toggle($(this).find(".volunteerLocation").text().toLowerCase().indexOf(value) > -1);
-                });
-            });
-        });
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete" async defer></script>
     <script>
         $(document).ready(function() {
-            if (window.sessionStorage.getItem("name") == "volunteer") {
+            if (window.sessionStorage.getItem("name")) {
                 $(".signinbtn").hide(1);
-                $(".orgicon").hide(1);
                 $(".profileicon").show(1);
-            } else if (window.sessionStorage.getItem("name") == "org") {
-                $(".signinbtn").hide(1);
-                $(".orgicon").show(1);
-                $(".profileicon").hide(1);
             } else {
                 $(".signinbtn").show(1);
-                $(".orgicon").hide(1);
                 $(".profileicon").hide(1);
             }
 

@@ -19,8 +19,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
-
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
@@ -51,12 +49,14 @@
                     <div class="py-1">
                         <div class="row align-items-center">
                             <div class="col-2">
-                                <h2 class="mb-0 site-logo"><a href="index.html">Job<strong class="font-weight-bold">Finder</strong> </a></h2>
+                                <h2 class="mb-0 site-logo"><a href="index.html">Volunteer<strong
+                                    class="font-weight-bold">Finder</strong> </a></h2>
                             </div>
                             <div class="col-10">
                                 <nav class="site-navigation text-right" role="navigation">
                                     <div class="container">
-                                        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                                        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span
+                                            class="icon-menu h3"></span></a></div>
 
                                         <ul class="site-menu js-clone-nav d-none d-lg-block">
                                             <li class="has-children">
@@ -71,20 +71,32 @@
                                             <li class="has-children">
                                                 <a href="#">For Recruiters</a>
                                                 <ul class="dropdown arrow-top">
-                                                    <li><a href="org_profile.html">My Profile</a></li>
+                                                    <li><a href="#">My Profile</a></li>
                                                     <li><a href="org-program-list.html">Previous Programs</a></li>
                                                     <li><a href="org-volunteer-list.html">Browse Volunteers</a></li>
                                                     <li><a href="new-post.html">Post a Program</a></li>
+                                                    <li class="has-children">
+                                                        <a href="#">More Links</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="#">--Not Available--</a></li>
+                                                            <!-- <li><a href="#">Post a Program</a></li> -->
+                                                            <!-- <li><a href="#">My Profile</a></li> -->
+                                                        </ul>
+                                                    </li>
 
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li class="signinbtn" style="display:none"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
+                                            <li class="signinbtn" style="display:none"><a href="sign-up.html"><span
+                                                class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a>
+                                            </li>
                                             <li class="profileicon" style="display:none">
                                                 <a href="user_profile.html"> <img src="images/profile.jpg" class="round " width="45"> </a>
                                             </li>
                                             <li class="orgicon" style="display:none">
                                                 <a href="job-list.html"> <img src="images/organization_logo2.png" class="round" width="45"> </a>
+                                            </li>
+                                            </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -100,117 +112,193 @@
 
         <div class="unit-5 overlay" style="background-image: url('images/hero_1.jpg');">
             <div class="container text-center">
-                <h2 class="mb-0">Post a Program</h2>
-                <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>Post a Program</span></p>
+                <h2 class="mb-0">Volunteer Profile</h2>
+                <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>Volunteer Profile</span>
+                </p>
             </div>
         </div>
-
-
 
 
         <div class="site-section bg-light">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12 col-lg-8 mb-5" id="pageContent">
+                    <div class="col-md-12 col-lg-8 mb-5">
 
-                        <form action="org-program-list.html" class="p-5 bg-white">
 
-                            <div class="row form-group" aria-label="Title">
-                                <div class="col-md-12">
-                                    <h3>Program Title*</h3>
-                                </div>
+                        <form action="#" class="p-5 bg-white">
+
+                            <div class="row form-group">
                                 <div class="col-md-12 mb-3 mb-md-0">
-                                    <!-- <label class="font-weight-bold" for="fullname">Opportunity Title</label> -->
-                                    <input type="text" id="fullname" class="form-control" placeholder="eg. English Teaching Volunteering">
-                                </div>
-                            </div>
+                                    <!-- 
+                                <p class="mr-3 text-black h5">Volunteer Name:</p>
+                                <p>Autumn Mcgee</p>
 
-                            <div class="row form-group" aria-label="Sector">
-                                <div class="col-md-12">
-                                    <h3>Sector*</h3>
-                                </div>
-                                <div class="col-md-12 mb-3 mb-md-0">
-                                    <select class="custom-select" id="sectorSelect">
-                    <label for="sectorOption0"><option value="" id="sectorOption0">-- Select --</option></label>
-                    <label for="sectorOption1"><option value="teaching" id="sectorOption1">Teaching</option></label>
-                    <label for="sectorOption2"><option value="electrical" id="sectorOption2">Electrical</option></label>
-                    <label for="sectorOption3"><option value="building" id="sectorOption3">Building</option></label>
-                    <label for="sectorOption4"><option value="immersion" id="sectorOption4">Cutural Immersion</option></label>
-                    <label for="sectorOption5"><option value="healthcare" id="sectorOption5">Healthcare</option></label>
-                    <label for="sectorOption6"><option value="finance" id="sectorOption6">Finance</option></label>
-                    <label for="sectorOption7"><option value="transportation" id="sectorOption7">Transportation &amp; Logistics</option></label>
-                    <label for="sectorOption7"><option value="food" id="sectorOption7">Restaurant / Food Service</option></label>
-                    <label for="sectorOption9"><option value="technical" id="sectorOption9">Technical</option></label>
-                  </select>
-                                </div>
-                            </div>
+                                <p class="mr-3 text-black h5">Email Address:</p>
+                                <p><a href="#">AutumnMcgee@gmail.com</a></p> -->
 
-                            <div class="row form-group" aria-label="Duration" id="durationSelect">
-                                <div class="col-md-12">
-                                    <h3>Duration*</h3>
-                                </div>
-                                <div class="col-md-12 mb-3 mb-md-0">
-                                    <label for="fulltime"><input type="radio" id="fulltime" name="jobDuration"> Full Time</label>
-                                </div>
-                                <div class="col-md-12 mb-3 mb-md-0">
-                                    <label for="parttime"><input type="radio" id="parttime" name="jobDuration"> Part Time</label>
-                                </div>
+                                    <h2 class="mr-3 text-black">Volunteer Experience</h2>
+                                    <br>
 
-                            </div>
+                                    <p class="mr-3 text-black h5">Her Finished Programs(2):</p>
+                                    <p>1. English Teaching for Primary School Students. <br> 2. Volunteer Teaching in Thailand.</p>
+                                    <br>
+                                    <div>
+                                        <h2 class="mr-3 text-black h5">Her Previews Reviews(3):</h2>
 
-                            <div class="row form-group mb-4" aria-label="Location">
-                                <div class="col-md-12">
-                                    <h3>Location*</h3>
-                                </div>
-                                <div class="col-md-12 mb-3 mb-md-0">
-                                    <input type="text" class="form-control" placeholder="eg. New York City" id="locationSelect">
-                                </div>
-                            </div>
+                                        <p class="comment">★★★★☆</p>
+                                        <p>She is really helpful in this program!</p>
+                                        <p>&mdash; <strong class="text-black font-weight-bold">Jack Fuller</strong>, GreenWay</p>
+                                        <p class="comment">★★☆☆☆</p>
+                                        <p></p>
+                                        <p>&mdash; <strong class="text-black font-weight-bold">John Lee</strong>, After School</p>
 
-                            <div class="row form-group" aria-label="Description">
-                                <div class="col-md-12">
-                                    <h3>Program Description</h3>
-                                </div>
-                                <div class="col-md-12 mb-3 mb-md-0">
-                                    <textarea name="" class="form-control" id="jobDescription" cols="30" rows="5"></textarea>
+                                        <p class="comment">★★★★★</p>
+                                        <p>She is interesting, dedicating and thoughful. She is a good teacher.</p>
+                                        <p>&mdash; <strong class="text-black font-weight-bold">Mary Sood</strong>, GreenWay</p>
+                                    </div>
+
                                 </div>
                             </div>
 
                             <div class="row form-group">
+
                                 <div class="col-md-12">
-                                    <input type="submit" value="Post" class="btn btn-primary  py-2 px-5" id="postButton">
+                                    <p><a href="org_feedback.html">Write your feedback <span class="icon-arrow-right small"></span></a></p>
                                 </div>
                             </div>
-
 
                         </form>
                     </div>
 
                     <div class="col-lg-4">
                         <div class="p-4 mb-3 bg-white">
-                            <h3 class="h5 text-black mb-3">Contact Info</h3>
-                            <p class="mb-0 font-weight-bold">Address</p>
-                            <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
 
-                            <p class="mb-0 font-weight-bold">Phone</p>
-                            <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
 
-                            <p class="mb-0 font-weight-bold">Email Address</p>
-                            <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                            <!--              <img src="" class="img-rounded">-->
+                            <img src="images/profile_pic1.jpeg" height="220" width="220" class="img-circle mb-4" style="align-self: center" alt="Profile photo" />
+
+
+                            <h3 class="h5 text-black mb-3">Autumn Mcgee</h3>
+
+                            <h3 class="h6 text-black mb-3">I look forward to make contributions to environmental protection！
+                            </h3>
+
+                            <p><a href="#">AutumnMcgee@gmail.com</a></p>
+
+                            <p class="show_stars">Average: ★★★☆☆</p>
+                            <p class="show_stars">Total: ★*23</p>
+
 
                         </div>
 
                         <!-- <div class="p-4 mb-3 bg-white">
-              <h3 class="h5 text-black mb-3">More Info</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur</p>
-              <p><a href="#" class="btn btn-primary  py-2 px-4">Learn More</a></p>
-            </div> -->
+                        <h3 class="h5 text-black mb-3">More Info</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia
+                            architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat
+                            quaerat eos qui, libero neque sed nulla.</p>
+                        <p><a href="#" class="btn btn-primary px-4 py-2 text-white pill">Learn More</a></p>
+                    </div> -->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5 quick-contact-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div>
+                            <h2><span class="icon-room"></span> Location</h2>
+                            <p class="mb-0">New York - 2398 <br> 10 Hadson Carl Street</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <h2><span class="icon-clock-o"></span> Service Times</h2>
+                            <p class="mb-0">Wednesdays at 6:30PM - 7:30PM <br> Fridays at Sunset - 7:30PM <br> Saturdays at 8:00AM - Sunset</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2><span class="icon-comments"></span> Get In Touch</h2>
+                        <p class="mb-0">Email: info@yoursite.com <br> Phone: (123) 3240-345-9348 </p>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <footer class="site-footer">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="footer-heading mb-4 text-white">About</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.
+                        </p>
+                        <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Approach</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="footer-heading mb-4 text-white">Categories</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Full Time</a></li>
+                                    <li><a href="#">Freelance</a></li>
+                                    <li><a href="#">Temporary</a></li>
+                                    <li><a href="#">Internship</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                                <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All Rights Reserved | This template is made with <i class="icon-heart text-warning" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -322,36 +410,6 @@
                 });
             }
         }
-        $(document).ready(function() {
-            function validate(field) {
-                if (!$(field).val().length) {
-                    $(field).css("border", "1px solid red");
-                    return 0;
-                } else {
-                    $(field).css("border", "");
-                    return 1;
-                }
-            }
-
-            function validateRadio(field) {
-                if (!$(field + " input:radio:checked").val()) {
-                    $(field).css("border", "1px solid red");
-                    return 0;
-                } else {
-                    $(field).css("border", "");
-                    return 1;
-                }
-            }
-            $("#postButton").on("click", function() {
-                if (validate("#fullname") && validate("#sectorSelect") && validateRadio("#durationSelect") && validate("#locationSelect")) {
-                    $("#pageContent").html("<div class=\"p-5 bg-white\"><h3>Post Successful!</h3><a href=\"new-post.html\">Back</a> </div>");
-                    window.location.href = "#top";
-                } else {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-            });
-        });
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete" async defer></script>
