@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>VolunteerFinder &mdash; Program details</title>
+    <title>Volunteer Finder</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -79,8 +79,12 @@
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
                                             <li class="signinbtn" style="display:none"><a href="sign-up.html"><span class="bg-primary text-white py-3 px-4 rounded">Sign in/Sign Up</span></a></li>
-                                            <li class="profileicon" style="display:none"> <a href="user_profile.html"> <img src="images/profile.jpg" class="round " width="45"> </a> </li>
-                      <li class="orgicon" style="display:none"> <a href="job-list.html"> <img src="images/organization_logo2.png" class="round" width="45"> </a> </li>
+                                            <li class="profileicon" style="display:none">
+                                                <a href="user_profile.html"> <img src="images/profile.jpg" class="round " width="45"> </a>
+                                            </li>
+                                            <li class="orgicon" style="display:none">
+                                                <a href="job-list.html"> <img src="images/organization_logo2.png" class="round" width="45"> </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -99,7 +103,7 @@
                 <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>Program details</span></p>
             </div>
         </div>
-      
+
         <div class="site-section bg-light">
             <div class="container">
                 <div class="row">
@@ -147,88 +151,88 @@
                                 <p>It was impossible to make the children under control. They were so noisy that I had a serious headache the next day. </p>
                                 <p>&mdash; <strong class="text-black font-weight-bold">Jeremy Kim</strong>, Wildcats High School</p>
                             </div>
+                        </div>
                     </div>
-                </div>
 
-          <div class="col-lg-4">
-
-
-              <div class="p-4 mb-3 bg-white">
-                <h3 class="h5 text-black mb-3">When</h3>
-                <p>Mon Sep 16, 2019 - Tue Jun 16, 2020</p>
-                <h3 class="h5 text-black mb-3">Where</h3>
-                <p>811 Emerson St, Evanston, IL, USA</p>
-                <h3 class="h5 text-black mb-3">Skills</h3>
-                <ul>
-                    <li>Proficient in English</li>
-                    <li>Get along well with has-children</li>
-                </ul>
-                <h3 class="h5 text-black mb-3">Requirements</h3>
-                <ul>
-                    <li>Background Check </li>
-                    <li>Orientation or Training</li>
-                    <li>Must work at least one 3 hour shift each week</li>
-                    <li>Must be able to commit through 6/16/20</li>
-                </ul>
-            </div>
-    </div>
+                    <div class="col-lg-4">
 
 
+                        <div class="p-4 mb-3 bg-white">
+                            <h3 class="h5 text-black mb-3">When</h3>
+                            <p>Mon Sep 16, 2019 - Tue Jun 16, 2020</p>
+                            <h3 class="h5 text-black mb-3">Where</h3>
+                            <p>811 Emerson St, Evanston, IL, USA</p>
+                            <h3 class="h5 text-black mb-3">Skills</h3>
+                            <ul>
+                                <li>Proficient in English</li>
+                                <li>Get along well with has-children</li>
+                            </ul>
+                            <h3 class="h5 text-black mb-3">Requirements</h3>
+                            <ul>
+                                <li>Background Check </li>
+                                <li>Orientation or Training</li>
+                                <li>Must work at least one 3 hour shift each week</li>
+                                <li>Must be able to commit through 6/16/20</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/bootstrap-datepicker.min.js"></script>
-        <script src="js/aos.js"></script>
 
 
-        <script src="js/mediaelement-and-player.min.js"></script>
+                    <script src="js/jquery-3.3.1.min.js"></script>
+                    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+                    <script src="js/jquery-ui.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/owl.carousel.min.js"></script>
+                    <script src="js/jquery.stellar.min.js"></script>
+                    <script src="js/jquery.countdown.min.js"></script>
+                    <script src="js/jquery.magnific-popup.min.js"></script>
+                    <script src="js/bootstrap-datepicker.min.js"></script>
+                    <script src="js/aos.js"></script>
 
-        <script src="js/main.js"></script>
-        <script>
-            $(document).ready(function() {
-                var sessionName = window.sessionStorage.getItem("name");
-                if (sessionName) {
-                    $(".signinbtn").hide(1);
-                    $(".profileicon").show(1);
-                    $("#applicationName").val(sessionName);
-                } else {
-                    $(".signinbtn").show(1);
-                    $(".profileicon").hide(1);
-                }
 
-                function validate(field) {
-                    $("#applySubmit").on("click", function(event) {
-                        if (!$(field).val().length) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                            $(field).css("border", "1px solid red");
-                        } else {
-                            $(field).css("border", "");
-                        }
-                    });
-                }
-                validate("#applicationName");
-                validate("#applicationEmail");
-                validate("#applicationAge");
-                validate("#experienceLevelSelect");
-                $("#applySubmit").on("click", function(event) {
-                    if (!$("#genderSelect input:radio:checked").val()) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        $("#genderSelect").css("border", "1px solid red");
-                    } else {
-                        $("#genderSelect").css("border", "");
-                    }
-                });
-            });
-        </script>
+                    <script src="js/mediaelement-and-player.min.js"></script>
+
+                    <script src="js/main.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            var sessionName = window.sessionStorage.getItem("name");
+                            if (sessionName) {
+                                $(".signinbtn").hide(1);
+                                $(".profileicon").show(1);
+                                $("#applicationName").val(sessionName);
+                            } else {
+                                $(".signinbtn").show(1);
+                                $(".profileicon").hide(1);
+                            }
+
+                            function validate(field) {
+                                $("#applySubmit").on("click", function(event) {
+                                    if (!$(field).val().length) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                        $(field).css("border", "1px solid red");
+                                    } else {
+                                        $(field).css("border", "");
+                                    }
+                                });
+                            }
+                            validate("#applicationName");
+                            validate("#applicationEmail");
+                            validate("#applicationAge");
+                            validate("#experienceLevelSelect");
+                            $("#applySubmit").on("click", function(event) {
+                                if (!$("#genderSelect input:radio:checked").val()) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                    $("#genderSelect").css("border", "1px solid red");
+                                } else {
+                                    $("#genderSelect").css("border", "");
+                                }
+                            });
+                        });
+                    </script>
 </body>
 
 </html>
@@ -239,25 +243,26 @@
 
 
 <script>
-    $(document).ready(function(){
-    if (window.sessionStorage.getItem("name") == "volunteer") {
-      $(".signinbtn").hide(1);
-      $(".orgicon").hide(1);
-      $(".profileicon").show(1);
-    } else if (window.sessionStorage.getItem("name") == "org") {
-      $(".signinbtn").hide(1);
-      $(".orgicon").show(1);
-      $(".profileicon").hide(1);
-    } else {
-      $(".signinbtn").show(1);
-      $(".orgicon").hide(1);
-      $(".profileicon").hide(1);
-    }
-    
-  });
+    $(document).ready(function() {
+        if (window.sessionStorage.getItem("name") == "volunteer") {
+            $(".signinbtn").hide(1);
+            $(".orgicon").hide(1);
+            $(".profileicon").show(1);
+        } else if (window.sessionStorage.getItem("name") == "org") {
+            $(".signinbtn").hide(1);
+            $(".orgicon").show(1);
+            $(".profileicon").hide(1);
+        } else {
+            $(".signinbtn").show(1);
+            $(".orgicon").hide(1);
+            $(".profileicon").hide(1);
+        }
+
+    });
 </script>
 </body>
 
-      </script>
-  </body>
+</script>
+</body>
+
 </html>
